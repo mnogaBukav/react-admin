@@ -8,10 +8,10 @@ const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: './src/index.ts'
+    app: './src/index.tsx'
   },
   plugins: [
-    new EnvironmentPlugin([]),
+    new EnvironmentPlugin(['REACT_APP_API']),
     new HtmlWebpackPlugin({
       template: './public/index.html'
     }),
